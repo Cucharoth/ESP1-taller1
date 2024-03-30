@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="container-fluid">
     <nav class="navbar px-5 navbar-expand-sm sticky-top bg-1" id="navbar">
@@ -59,13 +60,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="static/images/landscape_1.webp" alt="landscape_1" class="d-block w-100">
+                    <img src="static/images/landscape_1.webp" alt="landscape_1" class="d-block w-100 carousel-img">
                 </div>
                 <div class="carousel-item">
-                    <img src="static/images/landscape_2.webp" alt="landscape_2" class="d-block w-100">
+                    <img src="static/images/landscape_2.webp" alt="landscape_2" class="d-block w-100 carousel-img">
                 </div>
                 <div class="carousel-item">
-                    <img src="static/images/landscape_3.webp" alt="landscape_3" class="d-block w-100">
+                    <img src="static/images/landscape_3.webp" alt="landscape_3" class="d-block w-100 carousel-img">
                 </div>
             </div>
             <!-- Left and right controls/icons -->
@@ -76,9 +77,37 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-</main>
-<footer class="container-fluid sticky-bottom bg-3">
-    <div class="d-flex">footer</div>
+        <div class="d-flex flex-column main-text justify-content-between ">
+            <div class="d-flex flex-column content">
+                <div class="d-flex flex-column text-center">
+                    <h2>TITLE TEXT</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Mi in nulla posuere sollicitudin aliquam ultrices.</p>
+                </div>
+                <div class="d-flex justify-content-center main-text-btn-div">
+                    <button class="btn mx-3 my-btn">boton 1</button>
+                    <button class="btn mx-3 my-btn">boton 2</button>
+                </div>
+            </div>
+            <div class="d-flex contact-info-div">
+                <div class="d-flex socials-div">
+                    <a href="https://www.instagram.com"><i class="bi mx-3 bi-instagram"></i></a>
+                    <a href=""><i class="bi mx-3 bi-facebook"></i></a>
+                    <a href=""><i class="bi mx-3 bi-whatsapp"></i></a>
+                </div>
+                <div class="d-flex direccion-div">
+                    <p><i class="bi bi-geo-alt-fill">direccion</i></p>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="container-fluid align-items-center footer-div bg-3">
+    <div class="d-flex flex-column footer-div justify-content-center align-items-center">
+        <div class="d-flex flex-column text-center">
+            <p>About Us</p>
+            <p>&#169 2024 Cucharoth </p>
+        </div>
+    </div>
 </footer>
 <script type="text/javascript" src="static/js/scroll.js"></script>
 <script type="text/javascript" src="static/js/theme.js"></script>

@@ -5,7 +5,7 @@
     --text-color: #fff;
     --back-text-color: #fff;
     --accent-color: #fff;
-    --third-color: #fff;
+    --third-color: #86761c;
     --alert-color: #fff;
 }
 
@@ -42,8 +42,35 @@ p {
     margin: 0 !important;
 }
 
+footer {
+    height: 20%;
+}
+
+i {
+    color: #FFF;
+}
+
+.my-btn {
+    color: var(--text-color) !important;
+    background-color: var(--background-color) !important;
+}
+
+.my-btn:hover {
+    background-color: var(--third-color) !important;
+}
+
 .tooltip {
     font-size: 15px !important;
+}
+
+.navbar-toggler {
+    background-color: #FFF !important;
+    border-width: 10px;
+    border-style: solid !important;
+}
+
+.navbar-toggler-icon {
+
 }
 
 .bg-1 {
@@ -102,6 +129,115 @@ p {
     min-height: 80vh;
 }
 
-footer {
-    height: 20%;
+.carousel-img {
+    
 }
+
+.main-text {
+    color: #FFF;
+    backdrop-filter: blur(2px);
+    mask-image: radial-gradient(circle, rgba(0,0,0,10) 90%, rgba(0,0,0,0) 100%);
+    text-shadow: 2px 2px 1px #212a2e;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, 0%);
+    border-radius: 10px;
+    padding: 0 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+}
+
+.main-text::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.main-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+}
+
+.main-text::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 0px solid slategrey;
+    border-radius: 10px;
+}
+
+.main-text-btn-div {
+    margin-top: 3rem !important;
+}
+
+.contact-info-div {
+    justify-content: space-between;
+    align-items: end;
+    font-size: 1.5rem;
+}
+
+.footer-div {
+    height: 100%;
+}
+
+.socials-div {
+    margin: 2rem 3rem;
+    align-items: end !important;
+}
+
+.direccion-div {
+    margin: 2rem 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: 90%;
+    }
+
+    footer {
+        margin-top: auto;
+        max-height: 10%;
+    }
+    
+    button {
+        font-size: 0.8rem !important;
+    }
+
+    .main-text {
+        top: 35%;
+        width: 80%;
+        height: 55%;
+        padding-bottom: 1rem;
+    }
+
+    .carousel {
+        height: 25vh;
+        overflow-y: hidden;
+        min-height: 25vh
+    }
+    
+    .carousel-item {
+        height: 80vh;
+        overflow-y: hidden;
+        min-height: 80vh;
+    }
+
+    .main-text-btn-div {
+        margin-top: 1rem !important; 
+    }
+
+    .contact-info-div {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials-div {
+        margin: 0 !important;
+    }
+
+    .direccion-div {
+        margin: 3rem 0 !important;
+        
+    }
+}
+
