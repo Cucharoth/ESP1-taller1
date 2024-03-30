@@ -12,20 +12,11 @@
         </script>
 </head>
 <body class="container-fluid">
-    <nav class="navbar navbar-expand-sm sticky-top bg-1" id="navbar">
-        <div class="d-flex align-items-center switch-theme-div">
-            <button id="theme-toggle" class="btn" type="button">switch theme</button>
-            <div class="icon-show-light icon-hide">
-                <img src="static/images/icon-sun.svg" height="20px" width="20px" alt="Light mode img">
-            </div>
-            <div class="icon-show-dark icon-hide">
-                <img src="static/images/icon-moon.svg" height="20px" width="20px" alt="Dark mode img">
-            </div>
-        </div>
+    <nav class="navbar px-5 navbar-expand-sm sticky-top bg-1" id="navbar">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-flex">text</div>
+        <div class="d-flex">Brand</div>
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav ">
                 <div></div>
@@ -40,23 +31,32 @@
                 </li>
             </ul>
         </div>
+        <div class="d-flex align-items-center switch-theme-div">
+            <button id="theme-toggle" class="btn d-flex flex-row" data-bs-toggle="tooltip" title="Cambiar Tema" type="button">
+                <div class="icon-show-light icon-hide">
+                    <img src="static/images/icon-sun.svg" height="20px" width="20px" alt="Light mode img">
+                </div>
+                <div class="icon-show-dark icon-hide">
+                    <img src="static/images/icon-moon.svg" height="20px" width="20px" alt="Dark mode img">
+                </div>
+            </button>
+        </div>
     </nav>
     <header class="d-flex bg-2">
 
     </header>
-    <main class="container-fluid flex-column bg-2">
-        <a href="products/index.html">PRODUCTS</a>
+    <main class="container-fluid p-0 flex-column bg-2">
         <!-- Carousel -->
-        <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots 
+            <!-- Indicators/dots -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- The slideshow/carousel 
+            <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="static/images/landscape_1.webp" alt="landscape_1" class="d-block w-100">
@@ -68,20 +68,22 @@
                     <img src="static/images/landscape_3.webp" alt="landscape_3" class="d-block w-100">
                 </div>
             </div>
-<!-- Left and right controls/icons 
+            <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
-        </div> -->
+        </div>
 </main>
 <footer class="container-fluid sticky-bottom bg-3">
     <div class="d-flex">footer</div>
 </footer>
 <script type="text/javascript" src="static/js/scroll.js"></script>
 <script type="text/javascript" src="static/js/theme.js"></script>
+<script type="text/javascript" src="static/js/tooltip.js"></script>
+
 </body>
 
 </html>
