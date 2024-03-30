@@ -33,8 +33,12 @@ main {
     height: 80%;
 }
 
-nav {
-    
+p {
+    margin: 0 !important;
+}
+
+.tooltip {
+    font-size: 10px !important;
 }
 
 .bg-1 {
@@ -53,7 +57,7 @@ nav {
 [data-theme="dark"] .icon-show-dark,
 [data-theme="light"] .icon-show-light {
     color: transparent;
-    display: block !important;
+    display: flex !important;
 }
 
 [data-theme="dark"] .icon-show-dark:hover {
@@ -82,13 +86,15 @@ nav {
 .container-fluid {}
 
 .carousel {
-    height: 85vh;
+    height: 80vh;
     overflow-y: hidden;
+    min-height: 80vh;
 }
 
 .carousel-item {
-    height: 85vh;
+    height: 80vh;
     overflow-y: hidden;
+    min-height: 80vh;
 }
 
 footer {
