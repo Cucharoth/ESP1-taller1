@@ -1,0 +1,96 @@
+:root {
+    --bg-color: #fff;
+    --primary-color: #fff;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --back-text-color: #fff;
+    --accent-color: #fff;
+    --third-color: #fff;
+    --alert-color: #fff;
+}
+
+html[data-theme="light"] {
+    --background-color: #efefef;
+    --text-color: #121416d8;
+}
+
+html[data-theme="dark"] {
+    --background-color: #212a2e;
+    --text-color: #f7f8f8 !important;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+main {
+    height: 80%;
+}
+
+nav {
+    
+}
+
+.bg-1 {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.bg-2 {
+    background-color: green;
+}
+
+.bg-3 {
+    background-color: lightseagreen;
+}
+
+[data-theme="dark"] .icon-show-dark,
+[data-theme="light"] .icon-show-light {
+    color: transparent;
+    display: block !important;
+}
+
+[data-theme="dark"] .icon-show-dark:hover {
+    color: #fc0;
+    transition: color 0.5s;
+}
+
+[data-theme="light"] .icon-show-light:hover {
+    color: #333;
+    transition: color 0.5s;
+}
+
+.icon-hide {
+    display: none !important;
+}
+
+.sticky-top {
+    transition: background-color 200ms linear;
+}
+
+.sticky-top.nav-active {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+.container-fluid {}
+
+.carousel {
+    height: 85vh;
+    overflow-y: hidden;
+}
+
+.carousel-item {
+    height: 85vh;
+    overflow-y: hidden;
+}
+
+footer {
+    height: 20%;
+}
