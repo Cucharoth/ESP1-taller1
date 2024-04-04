@@ -9,3 +9,4 @@ Pagina Web desarrollada con Html + CSS con el objetivo de aplicar conocimientos 
 ## INTEGRANTES:
 
 - Eduardo Arévalo Mora.
+- Roberto Illesca Limari
