@@ -1,4 +1,3 @@
-
 /* Estilos para la barra de navegación */
 #navbar {
     background-color: white; /* Fondo blanco */
@@ -31,20 +30,25 @@
     margin: 5px 0; /* Espaciado entre párrafos */
 }
 
-/* Estilos para los eventos */
 .event-box {
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #ffffff; /* Color de fondo blanco */
     border: 1px solid #ced4da; /* Borde */
     padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Margen inferior entre eventos */
-    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 20px; /* Espacio entre cada evento */
 }
 
 .event-box h3 {
     margin-bottom: 10px; /* Espacio entre el título y la descripción */
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 /* Estilos para la lista de eventos */
+.event-list {
+    background-color: #f8f9fa; /* Color de fondo */
+    border: 1px solid #ced4da; /* Borde */
+    padding: 10px; /* Espaciado interno */
+}
+
 .event-list ul {
     list-style-type: none; /* Quita los puntos de la lista */
     padding: 0; /* Elimina el relleno predeterminado de la lista */
@@ -52,286 +56,5 @@
 
 .event-list ul li {
     margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+    text-align: left; /* Alinear texto a la izquierda */
 }
-
-/* Estilos para los números de fecha y abreviaturas de mes */
-.date-container {
-    display: inline-block;
-    background-color: #6c757d;
-    color: white;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.date-number {
-    font-size: 18px;
-}
-
-.month-abbr {
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-:root {
-    --bg-color: #1a1d20;
-        --primary-color: #b48c8d;
-        --secondary-color: #cdb3b3;
-        --text-color: #f7f8f8;
-        --white-text-color: #f7f8f8;
-        --black-text-color: #121416d8;
-        --accent-color: #13070C;
-        --third-color: #e6d9d9;
-        --alert-color: #D23C3C;
-        --font-family: "Lato", sans-serif;
-}
-
-html[data-theme="light"] {
-    --background-color: rgb(255, 255, 255);
-    --text-color: #121416d8;
-}
-
-html[data-theme="dark"] {
-    --background-color: #5c4152;
-    --text-color: #f7f8f8 !important;
-}
-
-body,
-html {
-    display: flex;
-    flex-direction: column;
-    padding: 0 !important;
-    margin: 0 !important;
-    height: 100vh;
-    min-height: 100vh;
-    font-size: 20px;
-}
-
-a {
-    color: var(--text-color) !important;
-    font-family: var(--font-family) !important;
-    }
-    
-    a:hover {
-        color: var(--primary-color) !important;
-}
-
-main {
-    height: 80%;
-}
-
-p {
-    margin: 0 !important;
-    font-family: var(--font-family) !important;
-}
-
-footer {
-    height: 20%;
-}
-
-i {
-    color: #FFF;
-}
-
-h2 {
-    font-family: var(--font-family);
-}
-.my-btn {
-    color: var(--white-text-color) !important;
-        border-style: solid !important;
-        border-width: 3px !important;
-        border-color: var(--primary-color) !important;
-}
-
-.my-btn:hover {
-    background-color: var(--primary-color) !important;
-        color: var(--bg-color) !important;
-}
-
-.tooltip {
-    font-size: 15px !important;
-}
-
-.navbar-toggler {
-    background-color: #FFF !important;
-    border-width: 10px;
-    border-style: solid !important;
-}
-
-.navbar-toggler-icon {
-
-}
-
-.bg-1 {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.bg-2 {
-    background-color: green;
-}
-
-.bg-3 {
-    background-color: lightseagreen;
-}
-
-[data-theme="dark"] .icon-show-dark,
-[data-theme="light"] .icon-show-light {
-    color: transparent;
-    display: flex !important;
-}
-
-[data-theme="dark"] .icon-show-dark:hover {
-    color: #fc0;
-    transition: color 0.5s;
-}
-
-[data-theme="light"] .icon-show-light:hover {
-    color: #333;
-    transition: color 0.5s;
-}
-
-.icon-hide {
-    display: none !important;
-}
-
-.sticky-top {
-    transition: background-color 200ms linear;
-}
-
-.sticky-top.nav-active {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-}
-
-.container-fluid {}
-
-.carousel {
-    height: 80vh;
-    overflow-y: hidden;
-    min-height: 80vh;
-}
-
-.carousel-item {
-    height: 80vh;
-    overflow-y: hidden;
-    min-height: 80vh;
-}
-
-.carousel-img {
-    
-}
-
-.main-text {
-    color: #FFF;
-    backdrop-filter: blur(2px);
-    mask-image: radial-gradient(circle, rgba(0,0,0,10) 90%, rgba(0,0,0,0) 100%);
-    text-shadow: 2px 2px 1px #212a2e;
-    position: absolute;
-    top: 20vh;
-    left: 50%;
-    width: 60%;
-    height: 60%;
-    transform: translate(-50%, 0%);
-    border-radius: 10px;
-    padding: 0 30px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 80vh;
-}
-
-.main-text::-webkit-scrollbar {
-    width: 0.3rem;
-}
-
-.main-text::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
-}
-
-.main-text::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 0px solid slategrey;
-    border-radius: 10px;
-}
-
-.main-text-btn-div {
-    margin-top: 3rem !important;
-}
-
-.contact-info-div {
-    justify-content: space-between;
-    align-items: end;
-    font-size: 1.5rem;
-}
-
-.footer-div {
-    background-color: var(--bg-color);
-        color: var(--white-text-color);
-    height: 100%;
-}
-
-.socials-div {
-    margin: 2rem 3rem;
-    align-items: end !important;
-}
-
-.direccion-div {
-    margin: 2rem 3rem;
-}
-
-@media only screen and (max-width: 600px) {
-    main {
-        height: 90%;
-    }
-
-    footer {
-        margin-top: auto;
-        max-height: 10%;
-    }
-    
-    button {
-        font-size: 0.8rem !important;
-    }
-
-    .main-text {
-        top: 35%;
-        width: 80%;
-        height: 55%;
-        padding-bottom: 1rem;
-    }
-
-    .carousel {
-        height: 25vh;
-        overflow-y: hidden;
-        min-height: 25vh
-    }
-    
-    .carousel-item {
-        height: 80vh;
-        overflow-y: hidden;
-        min-height: 80vh;
-    }
-
-    .main-text-btn-div {
-        margin-top: 1rem !important; 
-    }
-
-    .contact-info-div {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .socials-div {
-        margin: 0 !important;
-    }
-
-    .direccion-div {
-        margin: 3rem 0 !important;
-        
-    }
-}
-
-
