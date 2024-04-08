@@ -41,6 +41,22 @@ html {
     font-weight:bolder;
 }
 
+.product {
+    display: flex;
+    margin-bottom: 30px;
+}
+.product img {
+    width: 300px;
+}
+.product-text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.product-text p{
+    font-size: 16px;
+    text-align: justify;
+}
+
 a {
     color: var(--text-color) !important;
 }
