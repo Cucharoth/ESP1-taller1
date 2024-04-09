@@ -1,6 +1,6 @@
 /* Estilos para la barra de navegación */
 #navbar {
-    background-color: white; /* Fondo blanco */
+    background-color: rgb(73, 22, 22); /* Fondo blanco */
     padding: 10px 20px; /* Espaciado interno */
 }
 
@@ -23,12 +23,20 @@
 .footer-div {
     background-color: #e3c492; /* Fondo café claro */
     color: white; /* Texto blanco */
-    padding: 20px; /* Espaciado interno */
+    padding: 2.5px; /* Reducción del padding a la mitad */
+    font-size: 10px; /* Reducción del tamaño de fuente a la mitad */
 }
 
 .footer-div p {
-    margin: 5px 0; /* Espaciado entre párrafos */
+    margin: 0; /* Eliminar el margen */
 }
+
+.event-box img {
+    max-width: 100%; /* Ancho máximo del contenedor */
+    width: 400px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */ /* Altura automática para mantener la proporción */
+}
+
 
 .event-box {
     background-color: #ffffff; /* Color de fondo blanco */
@@ -57,4 +65,10 @@
 .event-list ul li {
     margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
     text-align: left; /* Alinear texto a la izquierda */
+}
+
+.container-fluid {
+    padding: 0; /* Elimina el relleno predeterminado del contenedor */
+    padding-top: 100px; /* Espaciado superior */
+    padding-bottom: 100px; /* Espaciado inferior */
 }
