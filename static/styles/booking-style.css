@@ -1,5 +1,5 @@
 html[data-theme="light"] {
-    --background-color: #BDA3B4;
+    --background-color: #fdfcf8;
     --text-color: black;
 }
 
@@ -21,6 +21,8 @@ html {
 
 a {
     color: var(--text-color) !important;
+    text-decoration: none !important;
+        font-size: 25px;
 }
 
 main {
