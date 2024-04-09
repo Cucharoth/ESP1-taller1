@@ -72,3 +72,9 @@
     padding-top: 100px; /* Espaciado superior */
     padding-bottom: 100px; /* Espaciado inferior */
 }
+body {
+    background-image: url('');
+    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+}
+
