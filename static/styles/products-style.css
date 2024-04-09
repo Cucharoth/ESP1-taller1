@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root {
     --bg-color: #fdfcf8;
     --primary-color: #cfaa40;
@@ -15,7 +16,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --background-color: #212a2e;
+    --background-color: #5c4152;
     --text-color: #f7f8f8 !important;
 }
 
@@ -28,6 +29,7 @@ html {
     height: 100vh;
     min-height: 100vh;
     font-size: 20px;
+    font-family: "Lato", sans-serif !important;
 }
 
 .bg-image {

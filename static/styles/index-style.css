@@ -9,7 +9,7 @@
         --accent-color: #13070C;
         --third-color: #e6d9d9;
         --alert-color: #D23C3C;
-        --font-family: "Lato", sans-serif;
+        --font-family: "Lato", sans-serif !important;
 }
 
 html[data-theme="light"] {
