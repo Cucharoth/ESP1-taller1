@@ -44,7 +44,7 @@
 
 .event-box {
     position: relative; /* Establece la posición relativa para que el botón se posicione correctamente */
-    background-color: #8b7777; /* Color de fondo blanco */
+    background-color: #ffffffd4; /* Color de fondo blanco */
     border-radius: 10px;
     padding: 10px; /* Espaciado interno */
     margin-bottom: 60px; /* Espacio entre cada evento */
@@ -63,7 +63,7 @@
 
 /* Estilos para la lista de eventos */
 .event-list {
-    background-color: #7c5555; /* Color de fondo */
+    background-color: #ffffffd4; /* Color de fondo */
     border: 1px solid #ced4da; /* Borde */
     padding: 10px; /* Espaciado interno */
 }
