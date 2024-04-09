@@ -61,6 +61,7 @@ html {
 
 a {
     color: var(--text-color) !important;
+    text-decoration: none !important;
 }
 
 main {
@@ -121,6 +122,12 @@ footer {
     height: 20%;
 }
 
+.brand {
+    font-size: 25px !important;
+}
 
+.list-group-item.active {
+    color: var(--third-color) !important;
+}
 
 
