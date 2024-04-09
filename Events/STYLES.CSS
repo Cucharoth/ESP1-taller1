@@ -73,7 +73,7 @@
     padding-bottom: 100px; /* Espaciado inferior */
 }
 body {
-    background-image: url('');
+    background-image: url('https://www.krion.com/uploads/tmp/paredes_de_cafeteria_selva.jpg');
     background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
     background-repeat: no-repeat; /* Para evitar que la imagen se repita */
 }
