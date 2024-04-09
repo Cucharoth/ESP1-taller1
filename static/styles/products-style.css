@@ -1,0 +1,123 @@
+:root {
+    --bg-color: #fdfcf8;
+    --primary-color: #cfaa40;
+    --secondary-color: #e6cd88;
+    --text-color: #151107;
+    --back-text-color: #fff;
+    --accent-color: #e2be5a;
+    --third-color: #fff;
+    --alert-color: #fff;
+}
+
+html[data-theme="light"] {
+    --background-color: var(--bg-color);
+    --text-color: #121416d8;
+}
+
+html[data-theme="dark"] {
+    --background-color: #212a2e;
+    --text-color: #f7f8f8 !important;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.bg-image {
+    background-image: url('../images/coffeehouse-2600877_1920.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 1px black;
+    font-weight:bolder;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 30px;
+}
+.product img {
+    width: 300px;
+}
+.product-text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.product-text p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+a {
+    color: var(--text-color) !important;
+}
+
+main {
+    height: 80%;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.tooltip {
+    font-size: 15px !important;
+}
+
+.bg-1 {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.bg-2 {
+    background-color: green;
+}
+
+.bg-3 {
+    background-color: lightseagreen;
+}
+
+[data-theme="dark"] .icon-show-dark,
+[data-theme="light"] .icon-show-light {
+    color: transparent;
+    display: flex !important;
+}
+
+[data-theme="dark"] .icon-show-dark:hover {
+    color: #fc0;
+    transition: color 0.5s;
+}
+
+[data-theme="light"] .icon-show-light:hover {
+    color: #333;
+    transition: color 0.5s;
+}
+
+.icon-hide {
+    display: none !important;
+}
+
+.sticky-top {
+    transition: background-color 200ms linear;
+}
+
+.sticky-top.nav-active {
+    transition: background-color 200ms linear;
+}
+
+
+footer {
+    height: 20%;
+}
+
+
+

@@ -1,11 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
+    <link rel="stylesheet" href="../static/styles/products-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </head>
-<body>
-    PRODUCTS
+<body class="container-fluid">
+    <nav class="navbar px-5 navbar-expand-sm sticky-top bg-1" id="navbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex">Brand</div>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+                <div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../products/index.html">Products</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center switch-theme-div">
+            <button id="theme-toggle" class="btn d-flex flex-row" data-bs-toggle="tooltip" title="Cambiar Tema" type="button">
+                <div class="icon-show-light icon-hide">
+                    <img src="../static/images/icon-sun.svg" height="25px" width="25px" alt="Light mode img">
+                </div>
+                <div class="icon-show-dark icon-hide">
+                    <img src="../static/images/icon-moon.svg" height="25px" width="25px" alt="Dark mode img">
+                </div>
+            </button>
+        </div>
+    </nav>
+
+   <div class="bg-image p-5">
+    <h2 class="text-center">Nuestro menú</h2>   
+   </div>
+
+   <div role="tabpanel" class="container">
+    <!-- List group -->
+    <div class="list-group list-group-horizontal list-group-flush list-group-item-light" id="myList" role="tablist">
+      <a class="list-group-item list-group-item-action active text-black text-center" data-bs-toggle="list" href="#home" role="tab">Café</a>
+      <a class="list-group-item list-group-item-action text-black text-center" data-bs-toggle="list" href="#profile" role="tab">Sandwiches</a>
+      <a class="list-group-item list-group-item-action text-black text-center" data-bs-toggle="list" href="#messages" role="tab">Bebidas</a>
+      <a class="list-group-item list-group-item-action text-black text-center" data-bs-toggle="list" href="#settings" role="tab">Postres</a>
+    </div>
+  
+    <!-- Tab panes -->
+    <div class="tab-content p-3">
+      <div class="tab-pane active" id="home" role="tabpanel">
+        <!-- Cafe -->
+        <div class="product">
+          <img class="rounded" src="../static/images/products/cafe/coffee-2220484_640.jpg" alt="Card image">
+          <div class="product-text">
+            <h4>Expresso</h4>
+            <p>
+            El espresso es una bebida de café concentrada y aromática, preparada al pasar agua caliente a alta presión a través de café molido finamente. Se caracteriza por su sabor intenso y su crema dorada en la parte superior.
+            </p>
+            <kbd>$2.990</kbd>
+          </div>
+        </div>
+       
+        <div class="product">
+          <img class="rounded" src="../static/images/products/cafe/caffeine-1866758_640.jpg" alt="Card image">
+          <div class="product-text">
+            <h4>Capuccino</h4>
+            <p>
+              El cappuccino es una deliciosa bebida de café que combina espresso, leche vaporizada y espuma de leche. Se distingue por su equilibrio entre el sabor intenso del espresso y la suavidad láctea, con una capa de espuma cremosa en la parte superior.
+            </p>
+            <kbd>$1.990</kbd>
+          </div>
+        </div>
+          <div class="product">
+            <img class="rounded" src="../static/images/products/cafe/coffee-7992226_640.jpg" alt="Card image">
+            <div class="product-text">
+              <h4>Latte</h4>
+              <p>
+                El latte es una bebida de café suave y reconfortante que combina espresso con una generosa cantidad de leche vaporizada y una fina capa de espuma de leche en la parte superior. Se destaca por su equilibrio entre el sabor suave del café y la cremosidad de la leche, con la espuma que añade una textura ligera y agradable. Es una opción popular para aquellos que prefieren un café más suave y con una mayor proporción de leche.
+              </p>
+              <kbd>$1.990</kbd>
+            </div>
+          </div>
+          <div class="product">
+            <img class="rounded" src="../static/images/products/cafe/coffee-2714970_640.jpg" alt="Card image">
+            <div class="product-text">
+              <h4>Americano</h4>
+              <p>  
+              El Americano es una bebida de café suave y reconfortante que se prepara diluyendo un espresso con agua caliente. Aunque más suave que un espresso puro, conserva su sabor robusto y aroma característico. Es una opción popular para aquellos que prefieren un café más suave y con un volumen mayor.
+              </p>
+              <kbd>$1.490</kbd>
+            </div>
+          </div>
+      </div>
+          
+        <div class="tab-pane" id="profile" role="tabpanel">
+          <!-- Sandwiches -->
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/sandwiches/Barros-Luco.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Barros luco</h4>
+              <kbd>$9990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/sandwiches/churrasco-italiano-carne.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Churrasco italiano</h4>
+              <kbd>$12990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/sandwiches/hamburger-1238246_640.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Chess Burger</h4>
+              <kbd>$12990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/sandwiches/sandwich-434658_640.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Chicken Burger</h4>
+              <kbd>$9990</kbd>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="messages" role="tabpanel">
+          <!-- Bebidas -->
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-tittle">Jugo</h4>
+              <kbd>$990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-tittle">Cafe helado</h4>
+              <kbd>$990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-tittle"></h4>
+              <kbd>$990</kbd>
+            </div>
+          </div>
+          <div class="card" style="width:300px">
+            <img class="card-img-top" src="../static/images/products/" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-tittle"></h4>
+              <kbd>$990</kbd>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="tab-pane" id="settings" role="tabpanel">
+          <!-- Postres -->
+          <div class="product">
+            <img class="rounded" src="../static/images/products/postres/italian-food-2157243_640.jpg" alt="Card image">
+            <div class="product-text">
+              <h4>Tiramisú</h4>
+              <p>El tiramisú es un postre italiano con capas de bizcocho de soletilla empapado en café y licor, intercaladas con una crema de mascarpone. Se finaliza con un toque de cacao en polvo. Es suave, cremoso y deliciosamente indulgente.</p>
+              <kbd>$6.990</kbd>
+            </div>
+          </div>
+          <div class="product">
+            <img class="rounded" src="../static/images/products/postres/Pie-de-Limon-web-570x458.jpg" alt="Card image">
+            <div class="product-text">
+              <h4>Pie de limon</h4>
+              <p>
+              El pie de limón es un postre clásico con una base de galletas trituradas mezcladas con mantequilla, seguida de una capa de relleno de limón hecho con jugo de limón, ralladura de limón, leche condensada y yemas de huevo. Finalmente, se cubre con una capa de merengue italiano y se tuesta ligeramente. Es refrescante, con un equilibrio perfecto entre lo dulce y lo ácido, y una textura suave y cremosa.
+              </p>
+              <kbd>$7.990</kbd>
+            </div>
+          </div>
+          <div class="product">
+            <img class="rounded" src="../static/images/products/postres/64c382f788b06.r_d.1610-872-0.jpeg" alt="Card image">
+            <div class="product-text">
+              <h4>Chesscake</h4>
+              <p>
+                El cheesecake es un postre irresistible con una base de galleta y una capa cremosa de queso crema, azúcar y huevos. Su textura suave y su sabor dulce lo convierten en un clásico favorito entre los amantes del postre.
+              </p>
+              <kbd>$5.990</kbd>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    </main>
+
+
+       
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container-fluid sticky-bottom">
+            <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+  <script type="text/javascript" src="../static/js/scroll.js"></script>
+  <script type="text/javascript" src="../static/js/theme.js"></script>
+  <script type="text/javascript" src="../static/js/tooltip.js"></script>
+
 </body>
+
 </html>
