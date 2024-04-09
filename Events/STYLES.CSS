@@ -32,6 +32,10 @@
 }
 
 .event-box img {
+
+    border: 1px solid #ced4da; /* Borde */
+    display: block; /* Muestra la imagen como un bloque */
+    border-color: #ced4da; /* Color del borde de la imagen */
     max-width: 100%; /* Ancho máximo del contenedor */
     width: 400px; /* Ancho de la imagen */
     height: 200px; /* Altura de la imagen */ /* Altura automática para mantener la proporción */
@@ -39,20 +43,27 @@
 
 
 .event-box {
-    background-color: #ffffff; /* Color de fondo blanco */
-    border: 1px solid #ced4da; /* Borde */
+    position: relative; /* Establece la posición relativa para que el botón se posicione correctamente */
+    background-color: #8b7777; /* Color de fondo blanco */
+    border-radius: 10px;
     padding: 10px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espacio entre cada evento */
+    margin-bottom: 60px; /* Espacio entre cada evento */
+}
+
+.event-box button {
+    position: absolute; /* Establece la posición absoluta para el botón */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
 }
 
 .event-box h3 {
     margin-bottom: 10px; /* Espacio entre el título y la descripción */
-    text-align: left; /* Alinear texto a la izquierda */
+    text-align: auto; /* Alinear texto a la izquierda */
 }
 
 /* Estilos para la lista de eventos */
 .event-list {
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #7c5555; /* Color de fondo */
     border: 1px solid #ced4da; /* Borde */
     padding: 10px; /* Espaciado interno */
 }
@@ -76,5 +87,29 @@ body {
     background-image: url('https://www.krion.com/uploads/tmp/paredes_de_cafeteria_selva.jpg');
     background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
     background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+}
+button {
+     
+    float: right ; /* Alinear el botón a la derecha */
+    float: top ; /* Alinear el botón arriba */
+    background-color: rgb(161, 137, 137); /* Fondo transparente */
+    border: rgb(49, 20, 20); /* Sin borde */
+    padding: 0; /* Sin espacio interior */
+    font-size: inherit; /* Tamaño de fuente heredado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    outline: none; /* Elimina el contorno al hacer clic */
+    width : 200px; /* Ancho del botón */
+    height : 50px; /* Altura del botón */
+    /* Agrega otros estilos personalizados según sea necesario */
+}
+button:hover {
+    background-color: rgb(49, 20, 20); /* Cambio de color al pasar el ratón */
+    color: white; /* Texto blanco */
+
+
+    
+}
+a {
+    text-decoration: none; /* Elimina la subrayado del enlace */
 }
 
