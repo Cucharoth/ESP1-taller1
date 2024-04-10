@@ -265,3 +265,8 @@ h2 {
     }
 }
 
+#grid-image{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
