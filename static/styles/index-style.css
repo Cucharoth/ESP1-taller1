@@ -37,10 +37,10 @@ a {
     color: var(--text-color) !important;
     font-family: var(--font-family) !important;
     text-decoration: none !important;
-    }
+}
     
-    a:hover {
-        color: var(--primary-color) !important;
+a:hover {
+    color: var(--primary-color) !important;
 }
 
 main {

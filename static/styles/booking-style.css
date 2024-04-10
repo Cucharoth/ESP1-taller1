@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 html[data-theme="light"] {
     --background-color: #fdfcf8;
     --text-color: black;
@@ -17,12 +18,12 @@ html {
     height: 100vh;
     min-height: 100vh;
     font-size: 20px;
+    font-family: "Lato", sans-serif !important;
 }
 
 a {
     color: var(--text-color) !important;
     text-decoration: none !important;
-        font-size: 25px;
 }
 
 main {
@@ -129,4 +130,8 @@ input {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 5px;
+}
+
+.brand {
+    font-size: 25px !important;
 }
