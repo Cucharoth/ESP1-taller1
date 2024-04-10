@@ -218,7 +218,7 @@ h2 {
 }
 
 .instagram-logo {
-    transition: background 3s, color 10s !important;
+    transition: color 1s !important;
 }
 
 .instagram-logo:hover {
@@ -242,6 +242,10 @@ h2 {
 
 .whatsapp-logo:hover {
     color: #25D366;
+}
+
+.cucharoth {
+    color:var(--white-text-color) !important;
 }
 
 @media only screen and (max-width: 600px) {
