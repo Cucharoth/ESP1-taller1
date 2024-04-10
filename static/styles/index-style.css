@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root {
     --bg-color: #1a1d20;
-        --primary-color: #b48c8d;
-        --secondary-color: #cdb3b3;
-        --text-color: #f7f8f8;
-        --white-text-color: #f7f8f8;
-        --black-text-color: #121416d8;
-        --accent-color: #13070C;
-        --third-color: #e6d9d9;
-        --alert-color: #D23C3C;
-        --font-family: "Lato", sans-serif !important;
+    --primary-color: #b48c8d;
+    --secondary-color: #cdb3b3;
+    --text-color: #f7f8f8;
+    --white-text-color: #f7f8f8;
+    --black-text-color: #121416d8;
+    --accent-color: #13070C;
+    --third-color: #e6d9d9;
+    --alert-color: #D23C3C;
+    --font-family: "Lato", sans-serif !important;
 }
 
 html[data-theme="light"] {
@@ -65,16 +65,16 @@ h2 {
 }
 .my-btn {
     background-color: rgba(122, 98, 98, 0.521) !important;
-        color: #f7f8f8 !important;
-        /*border-style: solid !important;*/
-        /*border-width: 3px !important;*/
-        border-color: var(--primary-color) !important;
-        width: 5rem;
+    color: #f7f8f8 !important;
+    /*border-style: solid !important;*/
+    /*border-width: 3px !important;*/
+    border-color: var(--primary-color) !important;
+    width: 5rem;
 }
 
 .my-btn:hover {
     background-color: var(--primary-color) !important;
-        color: var(--bg-color) !important;
+    color: var(--bg-color) !important;
 }
 
 .tooltip {
@@ -195,7 +195,7 @@ h2 {
 
 .footer-div {
     background-color: var(--bg-color);
-        color: var(--white-text-color);
+    color: var(--white-text-color);
     height: 100%;
 }
 
@@ -209,9 +209,41 @@ h2 {
     margin: 2rem 3rem;
 }
 
+.direction {
+    color: var(--white-text-color) !important;
+}
+
 .brand {
     font-size: 25px;
 }
+
+.instagram-logo {
+    transition: background 3s, color 10s !important;
+}
+
+.instagram-logo:hover {
+    text-shadow: none;
+    background: -webkit-linear-gradient(0deg, rgba(195,112,34,1) 0%, rgba(205,45,253,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook-logo {
+    transition: color 0.2s;
+}
+
+.facebook-logo:hover {
+    color: #0866ff !important;
+}
+
+.whatsapp-logo {
+    transition: color 0.2s;
+}
+
+.whatsapp-logo:hover {
+    color: #25D366;
+}
+
 @media only screen and (max-width: 600px) {
     main {
         height: 90%;
@@ -231,6 +263,8 @@ h2 {
         width: 80%;
         height: 55%;
         padding-bottom: 1rem;
+        color: var(--text-color);
+        text-shadow: none;
     }
 
     .carousel {
@@ -263,6 +297,8 @@ h2 {
         margin: 3rem 0 !important;
         
     }
+
+
 }
 
 #grid-image{
