@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html[data-theme="light"] {
+    --background-color: #fdfcf8;
+    --text-color: black;
+}
+
+html[data-theme="dark"] {
+    --background-color: #5C4152;
+    --text-color: white !important;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: "Lato", sans-serif !important;
+}
+
+a {
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
+
+main {
+    height: 80%;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.tooltip {
+    font-size: 15px !important;
+}
+
+.bg-1 {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .icon-show-dark,
+[data-theme="light"] .icon-show-light {
+    color: transparent;
+    display: flex !important;
+}
+
+[data-theme="dark"] .icon-show-dark:hover {
+    color: #fc0;
+    transition: color 0.5s;
+}
+
+[data-theme="light"] .icon-show-light:hover {
+    color: #333;
+    transition: color 0.5s;
+}
+
+.icon-hide {
+    display: none !important;
+}
+
+.sticky-top {
+    transition: background-color 200ms linear;
+}
+
+.sticky-top.nav-active {
+    transition: background-color 200ms linear;
+}
+
+.hdr-bg {
+    background: url('../images/cup-of-coffee-booking.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+}
+
+.hdr-txt{
+    padding-top: 7.5rem;
+    padding-bottom: 5.5rem;
+}
+
+section{
+    padding-top: 3rem;
+}
+
+.pl-2{
+    padding-left: 2rem;
+}
+
+input {
+    width: 18rem;
+    height: 2.5rem;
+    border-color: #B48C8D;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#select-person{
+    width: 18rem;
+    height: 2.5rem;
+    border: solid;
+    border-color: #B48C8D;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#btn-booking{
+    width: 150px;
+    color: black;
+    border-color: #B48C8D;
+    font-size: 18px;
+}
+
+#btn-booking:hover{
+    color: white;
+    background-color: #5C4152;
+    border-color: #5C4152;
+    font-size: 18px;
+}
+
+#contact-us{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.brand {
+    font-size: 25px !important;
+}

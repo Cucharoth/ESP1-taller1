@@ -9,7 +9,7 @@
         --accent-color: #13070C;
         --third-color: #e6d9d9;
         --alert-color: #D23C3C;
-        --font-family: "Lato", sans-serif;
+        --font-family: "Lato", sans-serif !important;
 }
 
 html[data-theme="light"] {
@@ -36,10 +36,11 @@ html {
 a {
     color: var(--text-color) !important;
     font-family: var(--font-family) !important;
-    }
+    text-decoration: none !important;
+}
     
-    a:hover {
-        color: var(--primary-color) !important;
+a:hover {
+    color: var(--primary-color) !important;
 }
 
 main {
@@ -63,10 +64,12 @@ h2 {
     font-family: var(--font-family);
 }
 .my-btn {
-    color: var(--white-text-color) !important;
-        border-style: solid !important;
-        border-width: 3px !important;
+    background-color: rgba(122, 98, 98, 0.521) !important;
+        color: #f7f8f8 !important;
+        /*border-style: solid !important;*/
+        /*border-width: 3px !important;*/
         border-color: var(--primary-color) !important;
+        width: 5rem;
 }
 
 .my-btn:hover {
@@ -202,9 +205,13 @@ h2 {
 }
 
 .direccion-div {
+    font-size: 1rem;
     margin: 2rem 3rem;
 }
 
+.brand {
+    font-size: 25px;
+}
 @media only screen and (max-width: 600px) {
     main {
         height: 90%;
@@ -258,3 +265,8 @@ h2 {
     }
 }
 
+#grid-image{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
