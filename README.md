@@ -8,4 +8,8 @@ Pagina Web desarrollada con Html + CSS con el objetivo de aplicar conocimientos 
 
 ## INTEGRANTES:
 
-- Eduardo Arévalo Mora.
+- Eduardo Arévalo Mora. (Cucharoth)
+- Roberto Illesca Limari.
+- Ignacio Uribe Soto.
+- Joaquín Escanilla Arauco.
+- Bastian Lagos Lazo.

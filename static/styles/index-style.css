@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root {
-    --bg-color: #fff;
-    --primary-color: #fff;
-    --secondary-color: #fff;
-    --text-color: #fff;
-    --back-text-color: #fff;
-    --accent-color: #fff;
-    --third-color: #fff;
-    --alert-color: #fff;
+    --bg-color: #1a1d20;
+    --primary-color: #b48c8d;
+    --secondary-color: #cdb3b3;
+    --text-color: #f7f8f8;
+    --white-text-color: #f7f8f8;
+    --black-text-color: #121416d8;
+    --accent-color: #13070C;
+    --third-color: #e6d9d9;
+    --alert-color: #D23C3C;
+    --font-family: "Lato", sans-serif !important;
 }
 
 html[data-theme="light"] {
-    --background-color: #efefef;
+    --background-color: rgb(255, 255, 255);
     --text-color: #121416d8;
 }
 
 html[data-theme="dark"] {
-    --background-color: #212a2e;
+    --background-color: #5c4152;
     --text-color: #f7f8f8 !important;
 }
 
@@ -32,6 +35,12 @@ html {
 
 a {
     color: var(--text-color) !important;
+    font-family: var(--font-family) !important;
+    text-decoration: none !important;
+}
+    
+a:hover {
+    color: var(--primary-color) !important;
 }
 
 main {
@@ -40,10 +49,46 @@ main {
 
 p {
     margin: 0 !important;
+    font-family: var(--font-family) !important;
+}
+
+footer {
+    height: 20%;
+}
+
+i {
+    color: #FFF;
+}
+
+h2 {
+    font-family: var(--font-family);
+}
+.my-btn {
+    background-color: rgba(122, 98, 98, 0.521) !important;
+    color: #f7f8f8 !important;
+    /*border-style: solid !important;*/
+    /*border-width: 3px !important;*/
+    border-color: var(--primary-color) !important;
+    width: 5rem;
+}
+
+.my-btn:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--bg-color) !important;
 }
 
 .tooltip {
     font-size: 15px !important;
+}
+
+.navbar-toggler {
+    background-color: #FFF !important;
+    border-width: 10px;
+    border-style: solid !important;
+}
+
+.navbar-toggler-icon {
+
 }
 
 .bg-1 {
@@ -102,6 +147,166 @@ p {
     min-height: 80vh;
 }
 
-footer {
-    height: 20%;
+.carousel-img {
+    
+}
+
+.main-text {
+    color: #FFF;
+    backdrop-filter: blur(2px);
+    mask-image: radial-gradient(circle, rgba(0,0,0,10) 90%, rgba(0,0,0,0) 100%);
+    text-shadow: 2px 2px 1px #212a2e;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, 0%);
+    border-radius: 10px;
+    padding: 0 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+}
+
+.main-text::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.main-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+}
+
+.main-text::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 0px solid slategrey;
+    border-radius: 10px;
+}
+
+.main-text-btn-div {
+    margin-top: 3rem !important;
+}
+
+.contact-info-div {
+    justify-content: space-between;
+    align-items: end;
+    font-size: 1.5rem;
+}
+
+.footer-div {
+    background-color: var(--bg-color);
+    color: var(--white-text-color);
+    height: 100%;
+}
+
+.socials-div {
+    margin: 2rem 3rem;
+    align-items: end !important;
+}
+
+.direccion-div {
+    font-size: 1rem;
+    margin: 2rem 3rem;
+}
+
+.direction {
+    color: var(--white-text-color) !important;
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.instagram-logo {
+    transition: color 1s !important;
+}
+
+.instagram-logo:hover {
+    text-shadow: none;
+    background: -webkit-linear-gradient(0deg, rgba(195,112,34,1) 0%, rgba(205,45,253,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook-logo {
+    transition: color 0.2s;
+}
+
+.facebook-logo:hover {
+    color: #0866ff !important;
+}
+
+.whatsapp-logo {
+    transition: color 0.2s;
+}
+
+.whatsapp-logo:hover {
+    color: #25D366;
+}
+
+.cucharoth {
+    color:var(--white-text-color) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: 90%;
+    }
+
+    footer {
+        margin-top: auto;
+        max-height: 10%;
+    }
+    
+    button {
+        font-size: 0.8rem !important;
+    }
+
+    .main-text {
+        top: 35%;
+        width: 80%;
+        height: 55%;
+        padding-bottom: 1rem;
+        color: var(--text-color);
+        text-shadow: none;
+    }
+
+    .carousel {
+        height: 25vh;
+        overflow-y: hidden;
+        min-height: 25vh
+    }
+    
+    .carousel-item {
+        height: 80vh;
+        overflow-y: hidden;
+        min-height: 80vh;
+    }
+
+    .main-text-btn-div {
+        margin-top: 1rem !important; 
+    }
+
+    .contact-info-div {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials-div {
+        margin: 0 !important;
+    }
+
+    .direccion-div {
+        margin: 3rem 0 !important;
+        
+    }
+
+
+}
+
+#grid-image{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
 }
